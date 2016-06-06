@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<modsCollection xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-5.xsd" xmlns="http://www.loc.gov/mods/v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+<mods xmlns="http://www.loc.gov/mods/v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-5.xsd">
+<titleInfo>
+   <title>{{jsonize(cells["Title"].value)}}</title>
+   <partNumber>{{jsonize(cells["Title Part"].value)}}</partNumber>
+</titleInfo>
+<name type="personal" authority="naf" valueURI="http://id.loc.gov/authorities/names/no2014131611">
+   <namePart>{{jsonize(cells["Creator"].value)}}</namePart>
+   <role>
+      <roleTerm type="text" authority="marcrelator" valueURI="http://id.loc.gov/vocabulary/relators/cre">{{jsonize(cells["Relator Term 1"].value)}}</roleTerm>
+   </role>
+   <role>
+      <roleTerm type="text" authority="marcrelator" valueURI="http://id.loc.gov/vocabulary/relators/pht">{{jsonize(cells["Relator Term 2"].value)}}</roleTerm>
+   </role>
+</name>
+<originInfo>
+   <place>
+      <placeTerm type="text">{{jsonize(cells["Digital Publisher Place"].value)}}</placeTerm>
+   </place>
+   <publisher>{{jsonize(cells["Digital Publisher"].value)}}</publisher>
+   <dateCreated encoding="w3cdtf" keyDate="yes">{{jsonize(cells["Date Created"].value)}}</dateCreated>
+   <dateCaptured encoding="w3cdtf">{{jsonize(cells["Date Digitized"].value)}}</dateCaptured>
+   <dateOther>{{jsonize(cells["Date Other"].value)}}</dateOther>
+</originInfo>
+<typeOfResource>{{jsonize(cells["Object Type"].value)}}</typeOfResource>
+<genre authority="aat" valueURI="http://vocab.getty.edu/aat/300128343">{{jsonize(cells["Genre"].value)}}</genre>
+<physicalDescription>
+    <extent>{{jsonize(cells["Physical Description"].value)}}</extent>
+    <internetMediaType>{{jsonize(cells["Internet Media Type"].value)}}</internetMediaType>
+    <digitalOrigin>{{jsonize(cells["Reformatting Note"].value)}}</digitalOrigin>
+    <reformattingQuality>{{jsonize(cells["Reformatting Quality"].value)}}</reformattingQuality>
+    <note type="physical details">{{jsonize(cells["Original Object Details"].value)}}</note>
+    <note type="condition">{{jsonize(cells["Condition"].value)}}</note>
+</physicalDescription>
+<abstract>{{jsonize(cells["Photographer's Notes"].value)}}</abstract>
+<language>
+    <languageTerm type="code" authority="iso639-2b" valueURI="http://id.loc.gov/vocabulary/iso639-2/eng">{{jsonize(cells["Language"].value)}}</languageTerm>
+</language>
+<subject authority="fast">
+   <name type="personal" authority="fast" valueURI={{jsonize(cells["URI--Names 1"].value)}}>
+      <namePart>{{jsonize(cells["Subjects--Names 1"].value)}}</namePart>
+      </name>
+</subject>
+<subject authority="fast">
+   <name type="personal" authority="fast" valueURI={{jsonize(cells["URI--Names 2"].value)}}>
+      <namePart>{{jsonize(cells["Subjects--Names 2"].value)}}</namePart>
+      </name>
+</subject>
+<subject authority="fast">
+   <name type="personal" authority="fast" valueURI={{jsonize(cells["URI--Names 3"].value)}}>
+      <namePart>{{jsonize(cells["Subjects--Names 3"].value)}}</namePart>
+      </name>
+</subject>
+<subject authority="fast">
+   <name type="personal" authority="fast" valueURI={{jsonize(cells["URI--Names 4"].value)}}>
+      <namePart>{{jsonize(cells["Subjects--Names 4"].value)}}</namePart>
+      </name>
+</subject>
+<subject authority="fast">
+    <name type="personal" authority="fast" valueURI={{jsonize(cells["URI--Names 5"].value)}}>
+      <namePart>{{jsonize(cells["Subjects--Names 5"].value)}}</namePart>
+      </name>
+</subject>
+<subject authority="fast">
+   <name type="conference" authority="fast" valueURI={{jsonize(cells["URI--Event"].value)}}>
+      <namePart>{{jsonize(cells["Subjects--Event"].value)}}</namePart>
+   </name>
+</subject>
+<subject authority="fast">
+   <name type="corporate" displayLabel="Track Name" authority="fast" valueURI={{jsonize(cells["URI--Track Name"].value)}}>
+      <namePart>{{jsonize(cells["Subjects--Track Name"].value)}}</namePart>
+   </name>
+</subject>
+<subject authority="fast">
+   <name type="corporate" authority="fast" valueURI={{jsonize(cells["URI--Musical Acts"].value)}}>
+      <namePart>{{jsonize(cells["Subjects--Musical Acts"].value)}}</namePart>
+   </name>
+</subject>
+<subject authority="fast" valueURI={{jsonize(cells["URI--Topics 1"].value)}}>
+   <topic>{{jsonize(cells["Subjects--Topics 1"].value)}}</topic>
+</subject>
+<subject authority="fast" valueURI={{jsonize(cells["URI--Topics 2"].value)}}>
+   <topic>{{jsonize(cells["Subjects--Topics 2"].value)}}</topic>
+</subject>
+<subject authority="fast" valueURI={{jsonize(cells["URI--Topics 3"].value)}}>
+   <topic>{{jsonize(cells["Subjects--Topics 3"].value)}}</topic>
+</subject>
+<subject authority="fast" valueURI={{jsonize(cells["URI--Topics 4"].value)}}>
+   <topic>{{jsonize(cells["Subjects--Topics 4"].value)}}</topic>
+</subject>
+<subject authority="fast" valueURI={{jsonize(cells["URI--Topics 5"].value)}}>
+   <topic>{{jsonize(cells["Subjects--Topics 5"].value)}}</topic>
+</subject>
+<subject authority="fast" valueURI={{jsonize(cells["URI--Topics 6"].value)}}>
+   <topic>{{jsonize(cells["Subjects--Topics 6"].value)}}</topic>
+</subject>
+<subject authority="fast" valueURI={{jsonize(cells["URI--Topics 7"].value)}}>
+   <topic>{{jsonize(cells["Subjects--Topics 7"].value)}}</topic>
+</subject>
+<subject authority="fast" valueURI={{jsonize(cells["URI--Topics 8"].value)}}>
+   <topic>{{jsonize(cells["Subjects--Topics 8"].value)}}</topic>
+</subject>
+<subject authority="fast" valueURI={{jsonize(cells["URI--Locations"].value)}}>
+   <geographic>{{jsonize(cells["Subjects--Locations"].value)}}</geographic>
+</subject>
+<location>
+    <physicalLocation displayLabel="original">{{jsonize(cells["Location of Original"].value)}}</physicalLocation>
+</location>
+<note type="venue">{{jsonize(cells["Photograph Location Note"].value)}}</note>
+<relatedItem type="host">
+   <titleInfo>
+      <title>{{jsonize(cells["Digital Photograph Collection"].value)}}</title>
+   </titleInfo>
+</relatedItem>
+<accessCondition type="use and reproduction">{{jsonize(cells["Rights Statement"].value)}}</accessCondition>
+<identifier type="local">{{jsonize(cells["Identifier"].value)}}</identifier>
+<recordInfo>
+ <recordCreationDate encoding="w3cdtf">{{jsonize(cells["Metadata Record Creation Date"].value)}}</recordCreationDate>   
+ <recordContentSource authority="oclcorg">{{jsonize(cells["Metadata Record Source"].value)}}</recordContentSource>
+ <languageOfCataloging>
+  <languageTerm type="code" authority="iso639-2b">{{jsonize(cells["Metadata Record Language"].value)}}</languageTerm>
+ </languageOfCataloging>
+</recordInfo>
+</mods> 
+
+</modsCollection>
