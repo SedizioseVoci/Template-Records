@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<modsCollection xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-5.xsd" xmlns="http://www.loc.gov/mods/v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+<mods xmlns="http://www.loc.gov/mods/v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-5.xsd">
+<titleInfo>
+   <title>{{jsonize(cells["Title"].value)}}</title>
+</titleInfo>
+<name type="personal" authority="naf" valueURI={{jsonize(cells["URI Interviewee"].value)}}>
+   <namePart>{{jsonize(cells["Interviewee"].value)}}</namePart>
+   <role>
+   <roleTerm type="text" authority="marcrelator">{{jsonize(cells["Interviewee Relator Term 1"].value)}}</roleTerm>
+   </role>
+   <role>
+   <roleTerm type="text" authority="marcrelator">{{jsonize(cells["Interviewee Relator Term 2"].value)}}</roleTerm>
+   </role>
+   <description>{{jsonize(cells["Interviewee Occupations 1"].value)}}</description>
+   <description>{{jsonize(cells["Interviewee Occupations 2"].value)}}</description>
+   <description>{{jsonize(cells["Interviewee Occupations 3"].value)}}</description>
+   <description>{{jsonize(cells["Interviewee Occupations 4"].value)}}</description>
+</name>
+<name type="personal" authority="naf">
+   <namePart>{{jsonize(cells["Interviewer"].value)}}</namePart>
+   <role>
+     <roleTerm type="text" authority="marcrelator">{{jsonize(cells["Interviewer Relator Term"].value)}}</roleTerm>
+   </role>
+</name>
+<name type="personal" authority="naf">
+   <namePart>{{jsonize(cells["Contributor"].value)}}</namePart>
+   <role>
+     <roleTerm type="text" authority="marcrelator">{{jsonize(cells["Contributor Relator Term"].value)}}</roleTerm>
+   </role>
+</name>
+<originInfo>
+   <place>
+       <placeTerm type="text">{{jsonize(cells["Place"].value)}}</placeTerm>
+   </place>
+   <publisher>{{jsonize(cells["Digital Publisher"].value)}}</publisher>
+   <dateCreated encoding="w3cdtf" keyDate="yes">{{jsonize(cells["Date of Original Recording"].value)}}</dateCreated>
+   <dateCaptured encoding="w3cdtf">{{jsonize(cells["Date Digital File Created"].value)}}</dateCaptured>
+</originInfo>
+<typeOfResource>{{jsonize(cells["Object Type"].value)}}</typeOfResource>
+<genre authority="rdacontent">{{jsonize(cells["Genre"].value)}}</genre>
+<physicalDescription>
+    <extent>{{jsonize(cells["Extent"].value)}}</extent>
+    <internetMediaType>{{jsonize(cells["Internet Media Type"].value)}}</internetMediaType>
+    <digitalOrigin>{{jsonize(cells["Digital Origin"].value)}}</digitalOrigin>
+    <reformattingQuality>{{jsonize(cells["Reformatting Quality"].value)}}</reformattingQuality>
+    <note type="physical details">{{jsonize(cells["Digital Origin Note"].value)}}</note>
+    <note type="condition">{{jsonize(cells["Audio Condition Note"].value)}}</note>
+</physicalDescription>
+<note type="additional physical form">{{jsonize(cells["Transcript Note"].value)}}</note>
+<note type="biographical/historical">{{jsonize(cells["Biographical Note"].value)}}</note>
+<abstract>{{jsonize(cells["Abstract"].value)}}</abstract>
+<language>
+    <languageTerm type="code" authority="iso639-2b">{{jsonize(cells["Language of Interview"].value)}}</languageTerm>
+</language>
+<subject authority="fast">
+   <name type="personal" authority="fast" valueURI={{jsonize(cells["URI--Names 1"].value)}}>
+      <namePart>{{jsonize(cells["Subjects--Names 1"].value)}}</namePart>
+      </name>
+</subject>
+<subject authority="fast">
+   <name type="personal" authority="fast" valueURI={{jsonize(cells["URI--Names 2"].value)}}>
+      <namePart>{{jsonize(cells["Subjects--Names 2"].value)}}</namePart>
+      </name>
+</subject>
+<subject authority="fast">
+   <name type="personal" authority="fast" valueURI={{jsonize(cells["URI--Names 3"].value)}}>
+      <namePart>{{jsonize(cells["Subjects--Names 3"].value)}}</namePart>
+      </name>
+</subject>
+<subject authority="fast">
+   <name type="personal" authority="fast" valueURI={{jsonize(cells["URI--Names 4"].value)}}>
+      <namePart>{{jsonize(cells["Subjects--Names 4"].value)}}</namePart>
+      </name>
+</subject>
+<subject authority="fast">
+   <name type="personal" authority="fast" valueURI={{jsonize(cells["URI--Names 5"].value)}}>
+      <namePart>{{jsonize(cells["Subjects--Names 5"].value)}}</namePart>
+      </name>
+</subject>
+<subject authority="fast">
+   <name type="corporate" authority="fast" valueURI={{jsonize(cells["URI--Organizations 1"].value)}}>
+      <namePart>{{jsonize(cells["Subjects--Organizations 1"].value)}}</namePart>
+   </name>
+</subject>
+<subject authority="fast">
+   <name type="corporate" authority="fast" valueURI={{jsonize(cells["URI--Organizations 2"].value)}}>
+      <namePart>{{jsonize(cells["Subjects--Organizations 2"].value)}}</namePart>
+   </name>
+</subject>
+<subject authority="fast">
+   <name type="corporate" authority="fast" valueURI={{jsonize(cells["URI--Organizations 3"].value)}}>
+      <namePart>{{jsonize(cells["Subjects--Organizations 3"].value)}}</namePart>
+   </name>
+</subject>
+<subject authority="fast">
+   <name type="corporate" authority="fast" valueURI={{jsonize(cells["URI--Organizations 4"].value)}}>
+      <namePart>{{jsonize(cells["Subjects--Organizations 4"].value)}}</namePart>
+   </name>
+</subject>
+<subject authority="fast">
+   <name type="corporate" authority="fast" valueURI={{jsonize(cells["URI--Organizations 5"].value)}}>
+      <namePart>{{jsonize(cells["Subjects--Organizations 5"].value)}}</namePart>
+   </name>
+</subject>
+<subject authority="fast">
+   <name type="corporate" authority="fast" valueURI={{jsonize(cells["URI--Organizations 6"].value)}}>
+      <namePart>{{jsonize(cells["Subjects--Organizations 6"].value)}}</namePart>
+   </name>
+</subject>
+<subject authority="fast">
+   <name type="corporate" authority="fast" valueURI={{jsonize(cells["URI--Organizations 7"].value)}}>
+      <namePart>{{jsonize(cells["Subjects--Organizations 7"].value)}}</namePart>
+   </name>
+</subject>
+<subject authority="fast">
+   <name type="corporate" authority="fast" valueURI={{jsonize(cells["URI--Organizations 8"].value)}}>
+      <namePart>{{jsonize(cells["Subjects--Organizations 8"].value)}}</namePart>
+   </name>
+</subject>
+<subject authority="fast">
+   <name type="corporate" authority="fast" valueURI={{jsonize(cells["URI--Organizations 9"].value)}}>
+      <namePart>{{jsonize(cells["Subjects--Organizations 9"].value)}}</namePart>
+   </name>
+</subject>
+<subject authority="fast">
+   <name type="corporate" authority="fast">
+      <namePart>{{jsonize(cells["Subjects--Events 1"].value)}}</namePart>
+   </name>
+</subject>
+<subject authority="fast" authorityURI="http://id.worldcat.org/fast" valueURI={{jsonize(cells["URI--Topics 1"].value)}}>
+   <topic>{{jsonize(cells["Subjects--Topics 1"].value)}}</topic>
+</subject>
+<subject authority="fast" authorityURI="http://id.worldcat.org/fast" valueURI={{jsonize(cells["URI--Topics 2"].value)}}>
+   <topic>{{jsonize(cells["Subjects--Topics 2"].value)}}</topic>
+</subject>
+<subject authority="fast" authorityURI="http://id.worldcat.org/fast" valueURI={{jsonize(cells["URI--Topics 3"].value)}}>
+   <topic>{{jsonize(cells["Subjects--Topics 3"].value)}}</topic>
+</subject>
+<subject authority="fast" authorityURI="http://id.worldcat.org/fast" valueURI={{jsonize(cells["URI--Topics 4"].value)}}>
+   <topic>{{jsonize(cells["Subjects--Topics 4"].value)}}</topic>
+</subject>
+<subject authority="fast" authorityURI="http://id.worldcat.org/fast" valueURI={{jsonize(cells["URI--Topics 5"].value)}}>
+   <topic>{{jsonize(cells["Subjects--Topics 5"].value)}}</topic>
+</subject>
+<subject authority="fast" authorityURI="http://id.worldcat.org/fast" valueURI={{jsonize(cells["URI--Topics 6"].value)}}>
+   <topic>{{jsonize(cells["Subjects--Topics 6"].value)}}</topic>
+</subject>
+<subject authority="fast" authorityURI="http://id.worldcat.org/fast" valueURI={{jsonize(cells["URI--Topics 7"].value)}}>
+   <topic>{{jsonize(cells["Subjects--Topics 7"].value)}}</topic>
+</subject>
+<subject authority="fast" authorityURI="http://id.worldcat.org/fast" valueURI={{jsonize(cells["URI--Topics 8"].value)}}>
+   <topic>{{jsonize(cells["Subjects--Topics 8"].value)}}</topic>
+</subject>
+<subject authority="fast" authorityURI="http://id.worldcat.org/fast" valueURI={{jsonize(cells["URI--Topics 9"].value)}}>
+   <topic>{{jsonize(cells["Subjects--Topics 9"].value)}}</topic>
+</subject>
+<subject authority="fast" authorityURI="http://id.worldcat.org/fast" valueURI={{jsonize(cells["URI--Topics 10"].value)}}>
+   <topic>{{jsonize(cells["Subjects--Topics 10"].value)}}</topic>
+</subject>
+<subject authority="fast" authorityURI="http://id.worldcat.org/fast" valueURI={{jsonize(cells["URI--Topics 11"].value)}}>
+   <topic>{{jsonize(cells["Subjects--Topics 11"].value)}}</topic>
+</subject>
+<subject authority="fast" authorityURI="http://id.worldcat.org/fast" valueURI={{jsonize(cells["URI--Topics 12"].value)}}>
+   <topic>{{jsonize(cells["Subjects--Topics 12"].value)}}</topic>
+</subject>
+<subject authority="fast" authorityURI="http://id.worldcat.org/fast" valueURI={{jsonize(cells["URI--Topics 13"].value)}}>
+   <topic>{{jsonize(cells["Subjects--Topics 13"].value)}}</topic>
+</subject>
+<subject authority="fast" authorityURI="http://id.worldcat.org/fast" valueURI={{jsonize(cells["URI--Topics 14"].value)}}>
+   <topic>{{jsonize(cells["Subjects--Topics 13"].value)}}</topic>
+</subject>
+<subject authority="fast" authorityURI="http://id.worldcat.org/fast" valueURI={{jsonize(cells["URI--Geographic 1"].value)}}>
+   <geographic>{{jsonize(cells["Subjects--Geographic 1"].value)}}</geographic>
+</subject>
+<subject authority="fast" authorityURI="http://id.worldcat.org/fast" valueURI={{jsonize(cells["URI--Geographic 2"].value)}}>
+   <geographic>{{jsonize(cells["Subjects--Geographic 2"].value)}}</geographic>
+</subject>
+<subject authority="fast" authorityURI="http://id.worldcat.org/fast" valueURI={{jsonize(cells["URI--Geographic 3"].value)}}>
+   <geographic>{{jsonize(cells["Subjects--Geographic 3"].value)}}</geographic>
+</subject>
+<subject authority="fast" authorityURI="http://id.worldcat.org/fast" valueURI={{jsonize(cells["URI--Geographic 4"].value)}}>
+   <geographic>{{jsonize(cells["Subjects--Geographic 4"].value)}}</geographic>
+</subject>
+<subject>
+   <temporal encoding="w3cdtf">{{jsonize(cells["Subjects--Temporal--Date Range"].value)}}</temporal>
+</subject>
+<subject authority="fast" authorityURI="http://id.worldcat.org/fast" valueURI={{jsonize(cells["URI--Form 1"].value)}}>
+   <genre>{{jsonize(cells["Subjects--Form 1"].value)}}</genre>
+</subject>
+<subject authority="fast" authorityURI="http://id.worldcat.org/fast" valueURI={{jsonize(cells["URI--Form 2"].value)}}>
+   <genre>{{jsonize(cells["Subjects--Form 2"].value)}}</genre>
+</subject>
+<note displayLabel="Related Collections Notes">{{jsonize(cells["Related Collections Note"].value)}}</note>
+<note displayLabel="Related Interviews Note">{{jsonize(cells["Related Interviews Note"].value)}}</note>
+<location>
+    <physicalLocation displayLabel="Original Interview">{{jsonize(cells["Location of Original"].value)}}</physicalLocation>
+</location>
+<relatedItem type="host" displayLabel="Collection">
+    <titleInfo>
+        <title>{{jsonize(cells["Collection"].value)}}</title>
+    </titleInfo>
+    <relatedItem type="series" displayLabel="Series">
+       <titleInfo>
+          <title>{{jsonize(cells["Series"].value)}}</title>
+       </titleInfo>
+    </relatedItem>
+</relatedItem>
+<relatedItem type="series" displayLabel="Digital Project">
+     <titleInfo>
+          <title>{{jsonize(cells["Related Item Host"].value)}}</title>
+     </titleInfo>
+</relatedItem>
+<note type="admin">{{jsonize(cells["Internal Admin Note"].value)}}</note>
+<accessCondition type="use and reproduction">{{jsonize(cells["Rights"].value)}}</accessCondition>
+<note type="funding">{{jsonize(cells["Grant Information"].value)}}</note>
+<identifier type="local">{{jsonize(cells["Identifier"].value)}}</identifier>
+<recordInfo>
+    <recordCreationDate encoding="w3cdtf">{{jsonize(cells["Metadata Record Creation Date"].value)}}</recordCreationDate>
+<recordContentSource authority="oclcorg">{{jsonize(cells["Metadata Record Source"].value)}}</recordContentSource>
+<languageOfCataloging>
+    <languageTerm authority="iso639-2b">{{jsonize(cells["Metadata Record Language"].value)}}</languageTerm>
+</languageOfCataloging>
+</recordInfo>
+</mods> 
+
+</modsCollection>
